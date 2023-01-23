@@ -1,172 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
 
-*{
+* {
+    padding: 0;
     margin: 0;
-    padding:0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing:border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-section{
+section {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background:#fff;
-}
-
-header{
-    position:absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: #fff;
 }
 
-header .logo{
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+header .logo {
     position: relative;
     max-width: 80px;
 }
 
-header ul{
-    position: relative;
+header ul {
     display: flex;
+    position: relative;
 }
 
-header ul li{
+header ul li {
     list-style: none;
 }
 
-header ul li a{
+header ul li a {
     display: inline-block;
     color: #333;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
-    transition: 300ms all ease-in-out;;
 }
 
-header ul li a:hover{
-    color: #017143;
-}
-
-.content{
-    position: relative;
-    width: 100%;
+.content {
     display: flex;
-    justify-content:space-between;
+    position: relative;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-.content .textBox{
+.content .textBox {
     position: relative;
     max-width: 600px;
 }
 
-.content .textBox h2{
+.content .textBox h2 {
     color: #333;
-    font-size:4em;
+    font-size: 4em;
     line-height: 1.4em;
-    font-weight: 500;
     font-weight: 500;
 }
 
-.content .textBox h2 span{
+.content .textBox h2 span {
     color: #017143;
     font-size: 1.2em;
     font-weight: 900;
 }
 
-.content .textBox p{
+.content .textBox p {
     color: #333;
 }
 
-.content .textBox a{
+.content .textBox a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #017143;
+    background-color: #017143;
     color: #fff;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
-.content .imgBox{
-    width: 600px;
+.content .imgBox {
     display: flex;
     justify-content: flex-end;
+    width: 600px;
     padding-right: 50px;
     margin-top: 50px;
 }
 
-.content .imgBox img{
-    max-width: 100%;
+.content .imgBox img {
+    max-width: 340px;
 }
 
-.thumb{
+.thumb {
     position: absolute;
+    display: flex;
     left: 50%;
     bottom: 20px;
-    display: flex;
-    transform: translateX(-50%);
+    transform: translate(-50%);
 }
 
-.thumb li{
-    list-style: none;
-    display:inline-block;
-    margin:0 20px;
+.thumb li {
+    display: inline-block;
+    list-style: none;    
+    margin: 0px 20px;
     cursor: pointer;
-    transition: 300ms ease-in;
+    transition: 0.5s;
 }
 
-.thumb li:hover{
+.thumb li:hover {
     transform: translateY(-15px);
 }
 
-.thumb li img{
-    max-width: 60px;
+.thumb li img {
+    max-width: 60px
 }
 
-.sci{
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
+.sci {
     display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    top: 50%;
+    right: 30px;transform: translateY(-50%);
 }
 
-.sci li{
+.sci li {
     list-style: none;
 }
 
-.sci li a{
+.sci li a {
     display: inline-block;
-    margin: 5px 0;
+    margin: 5px 0px;
     transform: scale(0.6);
     filter: invert(1);
 }
 
-.circle{
+.circle {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #017143;
+    background-color: #017143;
     clip-path: circle(600px at right 800px);
 }
 
